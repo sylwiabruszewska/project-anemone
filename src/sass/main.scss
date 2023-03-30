@@ -1,7 +1,16 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+@import './utils/variables';
+@import './utils/media-query';
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import './partials/button';
+@import './partials/typography';
+
+@import './base/container';
+@import './base/section';
+
+@import './components/header';
+@import './components/hero';
+@import './components/about';
+@import './components/store';
+@import './components/delivery';
+@import './components/blog';
+@import './components/footer';
