@@ -1,0 +1,35 @@
+// COLORS
+$colorPink: #e86f54;
+$colorPinkLight: #fa6f54;
+$colorPinkDark: #e25b41;
+$colorPinkFaded: #f6c5bb;
+$colorWhite: #fff;
+$colorBlack: #000;
+$colorGrayLight: #d7d7d7;
+$colorGrayDark: #111111b2;
+$colorRed: #e74a3b;
+$colorGreen: #3cbc81;
+
+// INPUT STATES COLORS
+$normalState: $colorGrayLight;
+$hoverState: $colorGrayDark;
+$errorState: $colorRed;
+$correctState: $colorGreen;
+
+// BUTTON COLORS
+$defaultColor: $colorPink;
+$hoverColor: $colorPinkDark;
+$focusColor: $colorPinkLight;
+$unactiveColor: $colorPinkFaded;
+
+// BORDER RADIUS
+$buttonBorderRadius: 38px;
+$buttonModalBorderRadius: 8px;
+$inputBorderRadius: 4px;
+
+// BORDER
+$border: 1px solid;
+
+// TRANSISTION - do linków, buttonów stosujemy $shift, do modala $shiftModal
+$shift: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$shiftModal: 500ms ease;
