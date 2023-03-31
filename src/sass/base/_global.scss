@@ -1,0 +1,16 @@
+* {
+  font-family: $fontFamily;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
