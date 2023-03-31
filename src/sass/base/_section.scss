@@ -1,0 +1,7 @@
+.section {
+  margin-bottom: 60px;
+
+  @include mq(tablet) {
+    margin-bottom: 100px;
+  }
+}
