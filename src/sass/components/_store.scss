@@ -1,0 +1,45 @@
+.store__title {
+  font-family: $fontFamily;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.22;
+  margin-bottom: 32px;
+}
+.store__title::before {
+  position: absolute;
+  top: 16px;
+  left: 98px;
+  content: '';
+  width: 190px;
+  height: 1px;
+  background-color: $colorBlack;
+  margin-left: 16px;
+}
+.store__list {
+  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.store__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.22;
+  margin-bottom: 6px;
+}
+.store__price {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.22;
+  opacity: 60%;
+}
+.store__text {
+  margin-top: 12px;
+}
+.button--md {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 32px;
+}
