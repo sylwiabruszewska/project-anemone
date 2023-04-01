@@ -1,0 +1,143 @@
+.hero {
+    // width:100vw;
+    // paddingi do usuniecia jesli beda ustawione w section
+    padding-left: 16px;
+    padding-right: 16px;
+    &__img-frame{
+        display: flex;
+        justify-content: center;
+    }
+    &__img-box {
+        padding-top: 40px;
+        width:154px;
+        height:274px;
+        display:flex;
+        justify-content: center;
+    }
+    &__headerbox {
+        position: absolute;
+        top: 247px;
+        display:flex;
+        justify-content: center;
+        margin:0px;
+    }
+    &__header {
+        font-family: var(--fontFamily);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 1.211;
+        text-align: center;
+        color: var(--colorBlack);
+        margin: 0px;
+        mix-blend-mode: normal;
+    }
+    &__textbox {
+        width: 305px;
+        position: absolute;
+        top: 135px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__text {
+        display: flex;
+        align-items: center;
+        width: 46px;
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        font-family: var(--fontFamily);
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.211;
+        text-align: left;
+        color: var(--colorBlack);
+        mix-blend-mode: normal;
+        padding-left: 50px;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        margin: 0px;
+        border: none;
+    }
+}
+// @media screen and (min-width: 480px) {}
+@media screen and (min-width: 768px) {
+.hero {
+        &__img-box {
+            // padding-top: 40px;
+            width: 390px;
+            height: 636px;
+        }
+
+        &__headerbox {
+            top: 575px;
+            margin: 0px;
+        }
+    
+        &__header {
+            font-size: 120px;
+            line-height: 1.216;
+        }
+    
+        &__textbox {
+            width: 680px;
+            top: 280px;
+        }
+    
+        &__text {
+            width: 46px;
+            margin: 0px;
+            font-size: 24px;
+            line-height: 1.21;
+            padding-left: 100px;
+        }
+    
+        &__button {
+            width:145px;
+            height: 145px;
+            margin: 0px;
+        }
+    }
+
+}
+@media screen and (min-width: 1280px) {
+    .hero {
+        // &__img-box {
+        //     // padding-top: 40px;
+        //     width: 390px;
+        //     height: 636px;
+        // }
+
+        &__headerbox {
+            top: 515px;
+            margin: 0px;
+        }
+
+        &__header {
+            font-size: 160px;
+            line-height: 1.21;
+        }
+
+        &__textbox {
+            width: 840px;
+            top: 280px;
+        }
+
+        &__text {
+            width: 46px;
+            margin: 0px;
+            font-size: 32px;
+            line-height: 1.21;
+            padding-left: 100px;
+        }
+
+        &__button {
+            width: 166px;
+            height: 166px;
+            margin: 0px;
+        }
+    }
+}
