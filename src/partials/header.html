@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anemone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="navbar page-header">
+      <svg class="header__logo">
+        <use href="../symbol-defs.svg#icon-logo"></use>
+      </svg>
+      <ul class="header__nav">
+        <li class="nav-item">
+          <a class="nav__link" href="./partials/hero.html">Anemone</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="./partials/about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="./partials/store.html">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="./partials/delivery.html">Delivery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav__link" href="./partials/blog.html">Blog</a>
+        </li>
+      </ul>
+      
+      <svg class="header__call">
+        <use href="../symbol-defs.svg#icon-call-us"></use>
+      </svg>
+      <div class="menu-container"></div>
+        <button class="header__menu-toggle js-open-menu" aria-expanded="false"
+        aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon">
+            <use href="../symbol-defs.svg#icon-Vector"></use>
+          </svg>
+          
+        </button>
+      </div>
+    </header>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">X</button>
+      <nav>
+        <ul class="mobile-menu">
+          <li><a class="mobile_link" href="./partials/hero.html">Anemone</a></li>
+          <li><a class="mobile_link" href="./partials/about.html">About us</a></li>
+          <li><a class="mobile_link" href="./partials/store.html">Store</a></li>
+          <li><a class="mobile_link" href="./partials/delivery.html">Delivery</a></li>
+          <li><a class="mobile_link" href="./partials/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <script src="./index.js" type="module"></script>
+  </body>
+</html>
