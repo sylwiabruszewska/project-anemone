@@ -1,0 +1,80 @@
+$maincolor: #000;
+
+.about__title {
+  margin-bottom: 32px;
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+  @include mq(desktop) {
+    margin-bottom: 26px;
+  }
+}
+
+.about__toptext {
+  //font-family: 'Montserrat'; powinno pójść z body
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: $maincolor;
+
+  @include mq(tablet) {
+    font-size: 44px;
+    line-height: 1.22;
+  }
+}
+
+.about__linediv {
+  position: relative;
+  width: 183px;
+}
+.about__line {
+  position: absolute;
+  width: 100%;
+  height: 0px;
+  left: 105px;
+  top: 14px;
+
+  border: 1px solid $maincolor;
+}
+.about__cointainer {
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.about__text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $maincolor;
+
+  @include mq(tablet) {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  @include mq(desktop) {
+    font-size: 22px;
+    line-height: 1.22;
+  }
+  margin-bottom: 16px;
+  @include mq(tablet) {
+    width: 322px;
+  }
+  @include mq(desktop) {
+    width: 510px;
+  }
+}
+.about__image {
+  width: 100%;
+  @include mq(tablet) {
+    width: 344px;
+  }
+  @include mq(desktop) {
+    width: 632px;
+  }
+}
