@@ -45,7 +45,7 @@
 .nav__link {
   color: #000000;
 
-  @media all and (max-width: 480px) {
+  @media all and (max-width: 481px) {
     display: none;
   }
 
@@ -93,7 +93,7 @@ ul {
   list-style: none;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 481px) {
   .menu {
     display: none;
   }
@@ -110,7 +110,7 @@ ul {
   border: none;
   cursor: pointer;
 
-  @media all and (min-width: 480px) {
+  @media all and (min-width: 481px) {
     display: none;
   }
   &:hover {
@@ -133,7 +133,7 @@ ul {
   outline: none;
 }
 
-@media all and (min-width: 480px) {
+@media all and (min-width: 481px) {
   .menu-toggle {
     display: none;
   }
@@ -210,7 +210,7 @@ ul {
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (max-width: 480px) {
+  @media all and (max-width: 482px) {
     width: 18px;
     height: 16px;
   }
