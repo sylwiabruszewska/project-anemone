@@ -10,9 +10,6 @@
   border: none;
   cursor: pointer;
 
-  @media all and (min-width: 480px) {
-    display: none;
-  }
   &:hover {
     fill: $colorPink;
   }
@@ -31,12 +28,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
-
-@media all and (min-width: 480px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 .menu-container {
@@ -110,9 +101,13 @@
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (max-width: 480px) {
+  @media all and (min-width: 481px) and (max-width: 767px) {
     width: 18px;
     height: 16px;
+  }
+
+  @media all and (min-width: 768px) and (max-width: 1280px) {
+    display: none;
   }
 
   &:hover {
