@@ -1,0 +1,21 @@
+.info {
+  font-size: 20px;
+  color: $colorGrayDark;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+hr {
+  margin: 20px 0;
+  border: 3px solid $colorPinkDark;
+}
+
+ul {
+  list-style-type: square;
+}
+
+a {
+  color: $colorPink;
+  font-weight: 600;
+  text-transform: uppercase;
+}
