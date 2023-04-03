@@ -1,3 +1,25 @@
-.footer{
-    background-color: $colorBlack;
+.link {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: $colorBlack;
+}
+
+.footer__subcontainer{
+    margin: 32px 0;
+}
+.footer__logo{
+    display: none;
+}
+
+.footer__heading {
+
+  padding-bottom: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 0.81;
+  text-align: left;
+
+  color: $colorWhite;
 }
