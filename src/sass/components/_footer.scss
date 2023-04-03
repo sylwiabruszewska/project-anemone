@@ -61,4 +61,22 @@
 }
 
 .utils {
+  margin-top: 28px;
+  margin-right: 74px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  &__item {
+    background: $colorBlack;
+  }
+  &__icon {
+    &-facebook {
+      fill: $colorWhite;
+    }
+    &-instagram {
+      fill: $colorWhite;
+    }
+  }
 }
