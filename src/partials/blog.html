@@ -1,0 +1,115 @@
+<!-- section-blog -->
+<section class="blog__section" id="blog">
+  <div class="container">
+    <h2 class="section__heading">Blog</h2>
+    <ul class="blog__flower">
+        <li class="blog__item">
+            <picture class="blog__img">
+        <source
+          srcset="
+            ./images/blog/flowers-mobile1.jpg    1x,
+            ./images/blog/flowers-mobile1@2x.jpg 2x,
+            ./images/blog/flowers-mobile1@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-tablet1.jpg    1x,
+            ./images/blog/flowers-tablet1@2x.jpg 2x,
+            ./images/blog/flowers-tablet1@3x.jpg 3x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-desktop1.jpg   1x,
+           ./images/blog/flowers-desktop1@2x.jpg 2x,
+           ./images/blog/flowers-desktop1@3x.jpg 3x
+          "
+          media="(max-width: 1600px)"
+        />
+        <img src="./images/blog/flowers-desktop1.jpg" alt="flower1" />
+      </picture>
+        </li>
+
+        <li class="blog__item">
+            <picture class="blog__img">
+        <source
+          srcset="
+            ./images/blog/flowers-mobile2.jpg    1x,
+            ./images/blog/flowers-mobile2@2x.jpg 2x,
+            ./images/blog/flowers-mobile2@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-tablet2.jpg    1x,
+            ./images/blog/flowers-tablet2@2x.jpg 2x,
+            ./images/blog/flowers-tablet2@3x.jpg 3x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-desktop2.jpg   1x,
+           ./images/blog/flowers-desktop2@2x.jpg 2x,
+           ./images/blog/flowers-desktop2@3x.jpg 3x
+          "
+          media="(max-width: 1600px)"
+        />
+        <img src="./images/blog/flowers-desktop2.jpg" alt="flower2" />
+      </picture>
+        </li>
+        <li class="blog__item">
+<!--HIDDEN-->
+            <picture class="blog__img"> 
+        <source
+          srcset="
+            ./images/blog/flowers-mobile3.jpg    1x,
+            ./images/blog/flowers-mobile3@2x.jpg 2x,
+            ./images/blog/flowers-mobile3@3x.jpg 3x
+          "
+          media="(max-width: 767px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-tablet3.jpg    1x,
+            ./images/blog/flowers-tablet3@2x.jpg 2x,
+            ./images/blog/flowers-tablet3@3x.jpg 3x
+          "
+          media="(max-width: 1199px)"
+        />
+        <source
+          srcset="
+            ./images/blog/flowers-desktop3.jpg   1x,
+           ./images/blog/flowers-desktop3@2x.jpg 2x,
+           ./images/blog/flowers-desktop3@3x.jpg 3x
+          "
+          media="(max-width: 1600px)"
+        />
+        <img src="./images/blog/flowers-desktop3.jpg" alt="flower3" />
+      </picture>
+        </li>
+    </ul>
+    <ul class="blog__arrow">
+      <li class="blog-btn-arrow">
+        <button class="blog__button--arrow" type="button">
+          <svg class="blog-button__icon--main" width="12" height="12">
+            <use href="./images/blog/icons.svg#icon-down-arrowL"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="blog-btn-arrow">
+        <button class="blog__button--arrow" type="button">
+          <svg class="blog-button__icon--secondary" width="12" height="12">
+            <use href="./images/blog/icons.svg#icon-down-arrowR"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+     <h3 class="blog__newsletter">Follow to our newsletter</h3>
+<button type="button" class="button button--sm" newsletter-modal-open>Subscribe</button>
+  </div>
+</section>
