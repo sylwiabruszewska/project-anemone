@@ -3,23 +3,54 @@
 }
 
 .footer {
+  padding: 32px 0;
   background-color: $colorBlack;
 }
 
-.footer__subcontainer{
-    margin: 32px 0;
+.footer__subcontainer {
+  display: flex;
+  justify-content: space-between;
 }
-.footer__logo{
-    display: none;
+.footer__logo {
+  display: none;
 }
 
 .footer__heading {
-
   padding-bottom: 18px;
   font-size: 18px;
   font-weight: 700;
   line-height: 0.81;
   text-align: left;
+  color: $colorWhite;
+}
 
+.nav-footer__item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.82;
+  text-align: left;
+  margin-bottom: 12px;
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.nav-footer__link {
+  color: $colorWhite;
+}
+
+.hours {
+  color: $colorWhite;
+}
+
+.contacts {
+  padding-top: 32px;
+}
+
+.contacts__address {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 0.82;
+  text-align: left;
   color: $colorWhite;
 }
