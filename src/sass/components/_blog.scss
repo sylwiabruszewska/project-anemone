@@ -15,19 +15,13 @@
     justify-content: center;
 }
 
+.blog__item {
+    justify-content: center;
+}
 .blog__img {
-    width: 136px;
-    height: 181px;
-
-    @include mq(tablet) {
-        width: 344px;
-        height: 398px;
-    }
-
-    @include mq(desktop) {
-        width: 390px;
-        height: 421px;
-    }
+    max-width: 100%;
+    height: auto;
+    
 }
 
 .blog__newsletter {
