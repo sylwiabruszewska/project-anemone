@@ -101,12 +101,11 @@
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (min-width: 481px) and (max-width: 767px) {
+  @media all and (min-width: 480px) and (max-width: 768px) {
     width: 18px;
     height: 16px;
   }
-
-  @media all and (min-width: 768px) and (max-width: 1280px) {
+  @media all and (min-width: 768px) and (max-width: 2000px) {
     display: none;
   }
 
