@@ -1,3 +1,4 @@
+@import './utils/font';
 @import './utils/variables';
 @import './utils/media-query';
 
@@ -6,6 +7,7 @@
 
 @import './base/container';
 @import './base/section';
+@import './base/global';
 
 @import './components/header';
 @import './components/hero';
@@ -14,3 +16,8 @@
 @import './components/delivery';
 @import './components/blog';
 @import './components/footer';
+@import './components/modals';
+@import './components/modal';
+@import './components/modal-thx';
+@import './components/modal-newsletter';
+@import './components/mobile-menu';

@@ -1,0 +1,105 @@
+.modal-thx {
+  width: 272px;
+  min-height: 357px;
+  padding: 16px 16px 32px 16px;
+  background-color: $colorWhite;
+
+  &__close {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      fill: $hoverColor;
+    }
+
+    &:focus {
+      fill: $focusColor;
+    }
+
+    @include mq(tablet) {
+      top: 24px;
+      right: 24px;
+      // transform: scale(1.33);
+    }
+  }
+
+  &__img {
+    display: block;
+    margin-top: 28px;
+    width: auto;
+    height: auto;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-align: center;
+    color: $colorBlack;
+  }
+
+  &__text {
+    margin-top: 14px;
+    width: 240px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: calc(15 / 12);
+    color: #5c5c5c;
+    text-align: center;
+  }
+
+  &__button {
+    margin-top: 18px;
+    width: 240px;
+    height: 37px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: calc(14 / 17);
+    border-radius: $buttonModalBorderRadius;
+  }
+}
+
+@include mq(tablet) {
+  .modal-thx {
+    padding: 24px 24px 54px 32px;
+    width: 480px;
+    min-height: 505px;
+
+    &__img {
+      margin-top: 30px;
+      width: 266px;
+      height: 202px;
+    }
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__text {
+      margin-top: 16px;
+      width: 416px;
+      font-size: 16px;
+      line-height: calc(20 / 16);
+    }
+
+    &__button {
+      margin-top: 34px;
+      width: 416px;
+      height: 50px;
+      font-size: 18px;
+      line-height: calc(22 / 18);
+    }
+  }
+}
