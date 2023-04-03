@@ -3,8 +3,10 @@
 }
 
 .footer {
-  padding: 32px 0;
   background-color: $colorBlack;
+  &__wrapper {
+    padding: 32px 0;
+  }
   &__subcontainer {
     display: flex;
     justify-content: space-between;
@@ -27,7 +29,7 @@
 .nav-footer__item {
   font-size: 14px;
   font-weight: 500;
-  line-height: 0.82;
+  line-height: 1.21;
   text-align: left;
   margin-bottom: 12px;
   &:last-child {
@@ -49,7 +51,7 @@
   &__address {
     font-size: 14px;
     font-weight: 500;
-    line-height: 0.82;
+    line-height: 1.21;
     text-align: left;
     color: $colorWhite;
     &-item {
@@ -77,6 +79,33 @@
     }
     &-instagram {
       fill: $colorWhite;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__wrapper {
+      padding: 60px 24px 54px;
+    }
+    &__heading {
+      font-size: 20px;
+      line-height: 1.21;
+    }
+
+    &__subcontainer {
+      justify-content: flex-start;
+    }
+  }
+
+  .nav-footer__item {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  .hours {
+    &__items {
+      margin-left: 44px;
     }
   }
 }
