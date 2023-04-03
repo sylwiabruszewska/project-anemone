@@ -133,9 +133,16 @@
       color: currentColor;
     }
 
-    &:hover,
-    &:focus-within {
+    &:hover {
       border: 1px solid $hoverState;
+    }
+
+    &:required:not(:placeholder-shown):invalid {
+      border: 1px solid $errorState;
+    }
+
+    &:required:not(:placeholder-shown):valid {
+      border: 1px solid $correctState;
     }
 
     @include mq(tablet) {
