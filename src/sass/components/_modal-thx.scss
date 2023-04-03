@@ -24,15 +24,12 @@
     @include mq(tablet) {
       top: 24px;
       right: 24px;
-      // transform: scale(1.33);
+      transform: scale(1.33);
     }
   }
 
   &__img {
-    display: block;
     margin-top: 28px;
-    width: auto;
-    height: auto;
   }
 
   &__container {
@@ -62,6 +59,7 @@
 
   &__button {
     margin-top: 18px;
+    margin-bottom: 0;
     width: 240px;
     height: 37px;
     font-weight: 600;

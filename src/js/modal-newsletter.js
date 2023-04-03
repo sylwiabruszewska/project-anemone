@@ -1,14 +1,14 @@
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-newsletter-open]'),
-    closeModalBtn: document.querySelector('[data-modal-newsletter-close]'),
-    modal: document.querySelector('[modal-newsletter]'),
+    openModalNewsletterBtn: document.querySelector('[data-modal-newsletter-open]'),
+    closeModalNewsletterBtn: document.querySelector('[data-modal-newsletter-close]'),
+    modalNewsletter: document.querySelector('[modal-newsletter]'),
   };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
+  refs.openModalNewsletterBtn.addEventListener('click', toggleModalNewsletter);
+  refs.closeModalNewsletterBtn.addEventListener('click', toggleModalNewsletter);
 
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+  function toggleModalNewsletter() {
+    refs.modalNewsletter.classList.toggle('is-hidden');
   }
 })();
