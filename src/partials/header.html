@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -20,9 +20,9 @@
   </head>
 
   <body>
-    <header class="navbar page-header">
+    <div class="navbar page-header">
       <svg class="header__logo">
-        <use href="./images/header/symbol-defs.svg#icon-logo"></use>
+        <use href="./images/icons/icons.svg#icon-logo"></use>
       </svg>
       <ul class="header__nav">
         <li class="nav-item">
@@ -43,18 +43,18 @@
       </ul>
       
       <svg class="header__call">
-        <use href="./images/header/symbol-defs.svg#icon-call-us"></use>
+        <use href="./images/icons/icons.svg#icon-call-us"></use>
       </svg>
       <div class="menu-container"></div>
         <button class="header__menu-toggle js-open-menu" aria-expanded="false"
         aria-controls="mobile-menu">
           <svg class="menu-toggle__icon">
-            <use href="./images/header/symbol-defs.svg#icon-Vector"></use>
+            <use href="./images/icons/icons.svg#icon-Vector"></use>
           </svg>
           
         </button>
       </div>
-    </header>
+    </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">X</button>
@@ -70,4 +70,3 @@
     </div>
     <script src="./index.js" type="module"></script>
   </body>
-</html>
