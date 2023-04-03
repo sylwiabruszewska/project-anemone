@@ -1,0 +1,60 @@
+<div class="newsletter-backdrop newsletter-is-hidden" newsletter-modal>
+  <div class="modal-newsletter">
+    <button type="button" class="modal-newsletter__close" newsletter-modal-close>
+      <svg width="18" height="18">
+        <use href="./images/icons/icons.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <div class="modal-newsletter__container">
+      <picture>
+        <source
+          srcset="
+            ./images/modal-newsletter/modal-newsletter-desktop.jpg     428w,
+            ./images/modal-newsletter/modal-newsletter-desktop@2x.jpg  856w,
+            ./images/modal-newsletter/modal-newsletter-desktop@3x.jpg 1284w
+          "
+          media="(min-width: 1280px)"
+          sizes="428px"
+        />
+        <source
+          srcset="
+            ./images/modal-newsletter/modal-newsletter-tablet.jpg     588w,
+            ./images/modal-newsletter/modal-newsletter-tablet@2x.jpg 1176w,
+            ./images/modal-newsletter/modal-newsletter-tablet@3x.jpg 1764w
+          "
+          media="(min-width: 768px)"
+          sizes="588px"
+        />
+        <img
+          src="./images/modal-newsletter/modal-newsletter-mobile.jpg"
+          srcset="
+            ./images/modal-newsletter/modal-newsletter-mobile@2x.jpg 544w,
+            ./images/modal-newsletter/modal-newsletter-mobile@3x.jpg 816w
+          "
+          alt="Bouquet of roses"
+          sizes="272px, 100vw"
+        />
+      </picture>
+      <div class="modal-newsletter__content">
+        <h3 class="modal-newsletter__title">Follow to our newsletter</h3>
+        <p class="modal-newsletter__text">
+          Be the first to get exclusive offers and the latest news on our product directly in your
+          box.
+        </p>
+        <form name="newsletter-form" class="modal-newsletter__form">
+          <label class="modal-newsletter__item"
+            >Email
+            <input
+              class="modal-newsletter__input"
+              type="email"
+              name="email"
+              placeholder="Your email"
+              required
+            />
+          </label>
+          <button type="submit" class="button modal-newsletter__button">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
