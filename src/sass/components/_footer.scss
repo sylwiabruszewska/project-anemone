@@ -46,6 +46,7 @@
 }
 
 .contacts {
+  width: 100%;
   padding-top: 32px;
 
   &__address {
@@ -71,7 +72,7 @@
     gap: 14px;
   }
   &__item {
-    background-color: $colorBlack;
+    background-color: transparent;
   }
   &__icon {
     &-facebook {
@@ -87,7 +88,7 @@
   .footer {
     &__wrapper {
       display: flex;
-      padding: 60px 24px 40px 54px;
+      padding: 60px 24px;
     }
     &__heading {
       font-size: 20px;
@@ -102,11 +103,16 @@
 
   .hours {
     margin-left: 44px;
+    margin-right: 44px;
+  }
+
+  .footer-mobile {
+    display: none;
   }
 
   .contacts {
     padding-top: 0;
-    margin-left: 44px;
+
     margin-right: 64px;
 
     &__address {
@@ -124,11 +130,14 @@
   }
 
   .utils {
+    display: flex;
     margin-top: 0;
-    &__icon {
+    margin-right: 0;
+    &__list {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 18px;
     }
   }
 }
