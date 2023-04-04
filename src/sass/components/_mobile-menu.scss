@@ -1,7 +1,7 @@
 .header__menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
+
   align-items: center;
   justify-content: center;
 
@@ -14,6 +14,20 @@
     fill: $colorPink;
   }
 }
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -23,11 +37,17 @@
 
   margin: 0;
   padding: 0;
-  background-color: $colorPink;
+  background-color: #fff;
   cursor: pointer;
   border: none;
   border-radius: 50%;
   outline: none;
+}
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -37,7 +57,7 @@
   width: 100vw;
   height: 100vh;
   padding-top: 32px;
-  background-color: $colorPink;
+  background-color: #fff;
   z-index: 999;
 
   transform: translateX(100%);
@@ -60,26 +80,23 @@
   margin: 0;
   list-style: none;
   margin-bottom: 200px;
-  background-color: $colorPink;
-  width: 100vw;
-  height: 100vh;
 }
 
 .mobile-menu .mobile_link {
   display: block;
   padding-top: 32px;
   text-decoration: none;
-  font-family: 'Montserrat';
+  font-family: 'Roboto';
   font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
-  background-color: $colorPink;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+
   letter-spacing: 0.02em;
-  color: #ffffff;
-  text-align: center;
+  color: #212121;
+
   &:hover {
-    color: black;
+    color: #2196f3;
   }
 }
 
@@ -94,16 +111,26 @@
   }
 }
 
-.mobile-contacts {
-  line-height: 3;
+.mobile-menu_social-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin-top: 64px;
 }
 
 .menu-toggle__icon {
   position: absolute;
 
   @media all and (min-width: 480px) and (max-width: 768px) {
-    width: 18px;
-    height: 16px;
+    width: 25px;
+    height: 20px;
+    position: fixed;
   }
   @media all and (min-width: 768px) and (max-width: 2000px) {
     display: none;
