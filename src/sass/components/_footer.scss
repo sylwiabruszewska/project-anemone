@@ -112,7 +112,6 @@
 
   .contacts {
     padding-top: 0;
-
     margin-right: 64px;
 
     &__address {
@@ -139,5 +138,30 @@
       justify-content: flex-start;
       gap: 18px;
     }
+  }
+}
+
+@include mq(desktop) {
+  .footer {
+    &__wrapper {
+      padding-right: 48px;
+    }
+    &__logo {
+      display: flex;
+      fill: $colorWhite;
+      margin-right: 210px;
+    }
+  }
+
+  .nav-footer {
+    margin-right: 96px;
+  }
+
+  .hours {
+    width: 190px;
+    margin-right: 50px;
+  }
+  .contacts {
+    margin-right: 164px;
   }
 }
