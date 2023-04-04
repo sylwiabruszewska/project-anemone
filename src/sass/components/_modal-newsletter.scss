@@ -108,6 +108,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -138,8 +139,24 @@
     }
 
     &:hover,
-    &:focus-within {
-      border: 1px solid $hoverState;
+    &:focus {
+      border-color: $hoverState;
+    }
+
+    &:not(:placeholder-shown):required:valid {
+      border-color: $correctState;
+
+      ~ .input__state--correct {
+        display: block;
+      }
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: $errorState;
+
+      ~ .input__state--error {
+        display: block;
+      }
     }
 
     @include mq(tablet) {
