@@ -2,24 +2,26 @@
   const refs = {
     // REFS
     // hero contact refs
-    openModalBtnContactHero: document.querySelector('[data-modal-contact-hero-open]'),
-    closeModalBtnContactHero: document.querySelector('[data-modal-contact-hero-close]'),
+    openModalBtnContactHero: document.querySelector('[modal-contact-hero-open]'),
+    closeModalBtnContactHero: document.querySelector('[modal-contact-hero-close]'),
     modalContactHero: document.querySelector('[modal-contact-hero]'),
 
     // contact refs
-    openModalBtnContact: document.querySelector('[data-modal-contact-open]'),
-    closeModalBtnContact: document.querySelector('[data-modal-contact-close]'),
+    openModalBtnContact: document.querySelector('[modal-contact-open]'),
+    closeModalBtnContact: document.querySelector('[modal-contact-close]'),
     modalContact: document.querySelector('[modal-contact]'),
 
-    //newsletter refs
-    openModalBtnNewsletter: document.querySelector('[data-modal-newsletter-open]'),
-    closeModalBtnNewsletter: document.querySelector('[data-modal-newsletter-close]'),
+    // newsletter refs
+    openModalBtnNewsletter: document.querySelector('[modal-newsletter-open]'),
+    closeModalBtnNewsletter: document.querySelector('[modal-newsletter-close]'),
     modalNewsletter: document.querySelector('[modal-newsletter]'),
 
     // thank you refs
-    openModalBtnThanks: document.querySelector('[data-modal-thanks-open]'),
-    closeModalBtnThanks: document.querySelector('[data-modal-thanks-close]'),
-    modalThanks: document.querySelector('[data-modal-thanks]'),
+    openModalBtnThanks: document.querySelector('[modal-thanks-open]'),
+    open2ModalBtnThanks: document.querySelector('[modal-thanks-open2]'),
+    closeModalBtnThanks: document.querySelector('[modal-thanks-close]'),
+    continueModalBtnThanks: document.querySelector('[modal-thanks-continue]'),
+    modalThanks: document.querySelector('[modal-thanks]'),
   };
 
   // ADD EVENT LISTENER
@@ -41,13 +43,15 @@
     toggleThankYouModal();
   });
 
-  refs.openModalBtnThanks.addEventListener('click', () => {
-    refs.modalContactHero.classList.add('is-hidden');
+  refs.open2ModalBtnThanks.addEventListener('click', () => {
+    refs.modalContact.classList.add('is-hidden');
     toggleThankYouModal();
   });
 
-  refs.openModalBtnThanks.addEventListener('click', toggleModal);
-  refs.closeModalBtnThanks.addEventListener('click', toggleModal);
+  refs.openModalBtnThanks.addEventListener('click', toggleModalThanks);
+  refs.open2ModalBtnThanks.addEventListener('click', toggleModalThanks);
+  refs.closeModalBtnThanks.addEventListener('click', toggleModalThanks);
+  refs.continueModalBtnThanks.addEventListener('click', toggleModalThanks);
 
   // FUNCTION
   // hero contact function
@@ -69,7 +73,7 @@
   // function toggleModalThx() {
   //   refs.modalThx.classList.toggle('is-hidden');
   // }
-  function toggleModal() {
+  function toggleModalThanks() {
     refs.modalThanks.classList.toggle('is-hidden');
   }
 })();

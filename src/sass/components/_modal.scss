@@ -100,15 +100,15 @@
     border: 0;
     outline: none;
     background-color: #000;
+
+    &:disabled {
+      background-color: rgba(232, 111, 84, 0.4);
+    }
+
+    &:enabled {
+      background-color: #e86f54;
+    }
   }
-}
-
-.form__submit-btn:disabled {
-  background-color: rgba(232, 111, 84, 0.4);
-}
-
-.form__submit-btn:enabled {
-  background-color: #e86f54;
 }
 
 .input {
@@ -133,7 +133,6 @@
 
 @include mq(tablet) {
   .modal-contact {
-    position: absolute;
     width: 480px;
     min-height: 511px;
     padding-top: 48px;
@@ -193,15 +192,4 @@
       top: 40px;
     }
   }
-}
-
-.button__close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  background-color: #fff;
-  border: none;
-  cursor: pointer;
 }
