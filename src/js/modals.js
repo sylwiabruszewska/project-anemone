@@ -36,8 +36,16 @@
   refs.closeModalBtnNewsletter.addEventListener('click', toggleModalNewsletter);
 
   // thank you event listener
-  // refs.openModalBtnThx.addEventListener('click', toggleModalThx);
-  // refs.closeModalBtnThx.addEventListener('click', toggleModalThx);
+  refs.openModalBtnThanks.addEventListener('click', () => {
+    refs.modalContactHero.classList.add('is-hidden');
+    toggleThankYouModal();
+  });
+
+  refs.openModalBtnThanks.addEventListener('click', () => {
+    refs.modalContactHero.classList.add('is-hidden');
+    toggleThankYouModal();
+  });
+
   refs.openModalBtnThanks.addEventListener('click', toggleModal);
   refs.closeModalBtnThanks.addEventListener('click', toggleModal);
 
