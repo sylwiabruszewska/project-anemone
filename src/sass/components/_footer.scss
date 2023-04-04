@@ -86,15 +86,12 @@
 @include mq(tablet) {
   .footer {
     &__wrapper {
+      display: flex;
       padding: 60px 24px 54px;
     }
     &__heading {
       font-size: 20px;
       line-height: 1.21;
-    }
-
-    &__subcontainer {
-      justify-content: flex-start;
     }
   }
 
@@ -104,26 +101,26 @@
   }
 
   .hours {
+    margin-left: 44px;
     &__items {
-      margin-left: 44px;
     }
   }
 
   .contacts {
-  padding-top: 32px;
+    padding-top: 0;
+    margin-left: 44px;
 
-  &__address {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.21;
-    text-align: left;
-    color: $colorWhite;
-    &-item {
-      display: block;
+    &__address {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 0.82;
+      text-align: left;
       color: $colorWhite;
-      margin-bottom: 12px;
+      &-item {
+        display: block;
+        color: $colorWhite;
+        margin-bottom: 12px;
+      }
     }
   }
-}
-
 }
