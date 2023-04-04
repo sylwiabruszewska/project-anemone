@@ -5,12 +5,6 @@
 @import './partials/button';
 @import './partials/typography';
 
-@import './components/modals';
-@import './components/modal';
-@import './components/modal-thx';
-@import './components/modal-newsletter';
-@import './components/mobile-menu';
-
 @import './base/container';
 @import './base/section';
 @import './base/global';
@@ -22,3 +16,10 @@
 @import './components/delivery';
 @import './components/blog';
 @import './components/footer';
+
+@import './components/modals';
+@import './components/modal';
+@import './components/modal-thx';
+@import './components/modal-newsletter';
+@import './components/mobile-menu';
+@import './components/swiper';
