@@ -17,10 +17,12 @@
   }
 
   &__heading {
+    font-family: 'Inter';
+    font-weight: 700;
     padding-bottom: 18px;
     font-size: 18px;
     font-weight: 700;
-    line-height: 0.81;
+    line-height: 1.21;
     text-align: left;
     color: $colorWhite;
   }
