@@ -138,8 +138,7 @@
       color: currentColor;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-color: $hoverState;
     }
 

@@ -52,7 +52,7 @@
     width: 240px;
     height: 35px;
     margin-bottom: 14px;
-    resize: none;
+    outline: none;
     font-weight: 500;
     padding-left: 12px;
     font-size: 12px;
@@ -65,8 +65,7 @@
       color: currentColor;
     }
 
-    &:hover,
-    &:focus {
+    &:hover {
       border-color: $hoverState;
     }
 
