@@ -58,11 +58,10 @@
     width: 64px;
     height: 76px;
     cursor: pointer;
-    fill: $colorBlack;
-    transition: fill $shift;
+    transition: filter $shift;
     transition: transform $shift;
     &:hover {
-      fill: $colorPink;
+      filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%);
       transform: scale(1.2);
     }
   }
