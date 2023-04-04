@@ -83,7 +83,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@include mq(tablet) {
   .footer {
     &__wrapper {
       padding: 60px 24px 54px;
@@ -108,4 +108,22 @@
       margin-left: 44px;
     }
   }
+
+  .contacts {
+  padding-top: 32px;
+
+  &__address {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    text-align: left;
+    color: $colorWhite;
+    &-item {
+      display: block;
+      color: $colorWhite;
+      margin-bottom: 12px;
+    }
+  }
+}
+
 }
