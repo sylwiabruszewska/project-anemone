@@ -1,5 +1,5 @@
 .hero {
-  margin-bottom: 165px;
+  margin-bottom: 120px;
   &__img-frame {
     display: flex;
     justify-content: center;
@@ -72,6 +72,7 @@
 
 @include mq(tablet) {
   .hero {
+    margin-bottom: 165px;
     &__img-box {
       width: 390px;
       height: 636px;
