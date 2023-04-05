@@ -7,13 +7,13 @@
     gap: 25px;
 }
 
-    .blog__button--arrow {
-        border: 0px;
-        background-color: $colorWhite;
+.blog__button--arrow {
+    border: 0px;
+    background-color: $colorWhite;
        
 }
 
-.blog__flower {
+.blog__flower:not(:first-child) {
     display: flex;
     gap: 16px;
     justify-content: center;
@@ -29,7 +29,7 @@
 }
 
 .blog__newsletter {
-    margin: 0 auto;
+    margin: 24 auto;
     text-align: center;
     width: 224px;
     height: 22px;
@@ -37,7 +37,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 0.818;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
 
     @include mq(tablet) {
         margin-bottom: 32px;
