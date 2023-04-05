@@ -1,4 +1,40 @@
 .swiper {
-  width: 600px;
-  height: 300px;
+  margin-bottom: 50px;
+}
+
+//dodać mixiny na offset
+.swiper {
+  --swiper-navigation-size: 30px;
+  --swiper-navigation-top-offset: 100%;
+  --swiper-navigation-sides-offset: 175px;
+  --swiper-navigation-color: black;
+}
+
+.swiper,
+swiper-container {
+  overflow: visible;
+}
+.swiper-wrapper {
+  overflow: hidden;
+}
+
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
+  overflow: visible;
+}
+
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  transition: fill $shift;
+  transition: transform $shift;
+  z-index: 500;
+
+  &:hover {
+    color: $colorBlack;
+    transform: scale(1.3);
+  }
 }
