@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
@@ -29,11 +30,13 @@
     </footer>
 
     <!-- Modals -->
+    <include src="./partials/modal-hero.html"></include>
     <include src="./partials/modal.html"></include>
     <include src="./partials/modal-thx.html"></include>
     <include src="./partials/modal-newsletter.html"></include>
 
     <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

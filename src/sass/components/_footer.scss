@@ -1,0 +1,171 @@
+.link {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: $colorBlack;
+  &__wrapper {
+    padding: 32px 0;
+  }
+  &__subcontainer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: none;
+  }
+
+  &__heading {
+    font-family: $fontSecondary;
+    font-weight: 700;
+    padding-bottom: 18px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.21;
+    text-align: left;
+    color: $colorWhite;
+  }
+}
+
+.nav-footer__item {
+  font-family: $fontSecondary;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.21;
+  text-align: left;
+  margin-bottom: 12px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.nav-footer__link {
+  color: $colorWhite;
+}
+
+.hours {
+  color: $colorWhite;
+}
+
+.contacts {
+  width: 100%;
+  padding-top: 32px;
+
+  &__address {
+    font-family: $fontSecondary;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.21;
+    text-align: left;
+    color: $colorWhite;
+    &-item {
+      display: block;
+      color: $colorWhite;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.utils {
+  margin-top: 28px;
+  margin-right: 74px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+  }
+  &__item {
+    background-color: transparent;
+  }
+  &__icon {
+    &-facebook {
+      fill: $colorWhite;
+    }
+    &-instagram {
+      fill: $colorWhite;
+    }
+  }
+}
+
+@include mq(tablet) {
+  .footer {
+    &__wrapper {
+      display: flex;
+      padding: 60px 24px;
+    }
+    &__heading {
+      font-size: 20px;
+      line-height: 1.21;
+    }
+  }
+
+  .nav-footer__item {
+    font-size: 16px;
+    line-height: 1.19;
+  }
+
+  .hours {
+    margin-left: 44px;
+    margin-right: 44px;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .contacts {
+    padding-top: 0;
+    margin-right: 64px;
+
+    &__address {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 0.82;
+      text-align: left;
+      color: $colorWhite;
+      &-item {
+        display: block;
+        color: $colorWhite;
+        margin-bottom: 12px;
+      }
+    }
+  }
+
+  .utils {
+    display: flex;
+    margin-top: 0;
+    margin-right: 0;
+    &__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 18px;
+    }
+  }
+}
+
+@include mq(desktop) {
+  .footer {
+    &__wrapper {
+      padding-right: 48px;
+    }
+    &__logo {
+      display: flex;
+      fill: $colorWhite;
+      margin-right: 210px;
+    }
+  }
+
+  .nav-footer {
+    margin-right: 96px;
+  }
+
+  .hours {
+    width: 190px;
+    margin-right: 50px;
+  }
+  .contacts {
+    margin-right: 164px;
+  }
+}

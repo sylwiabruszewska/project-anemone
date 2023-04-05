@@ -1,0 +1,87 @@
+<!-- section-blog -->
+<section class="blog__section" id="blog">
+  <div class="container">
+    <h2 class="section__heading">Blog</h2>
+    <ul class="blog__flower">
+      <li class="blog__item">
+        <img
+          class="blog__img"
+          srcset="
+            ./images/blog/flowers-mobile1.jpg      136w,
+            ./images/blog/flowers-mobile1@2x.jpg   272w,
+            ./images/blog/flowers-mobile1@3x.jpg   408w,
+            ./images/blog/flowers-tablet1.jpg      344w,
+            ./images/blog/flowers-tablet1@2x.jpg   688w,
+            ./images/blog/flowers-tablet1@3x.jpg  1032w,
+            ./images/blog/flowers-desktop1.jpg     390w,
+            ./images/blog/flowers-desktop1@2x.jpg  780w,
+            ./images/blog/flowers-desktop1@3x.jpg 1170w
+          "
+          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px"
+          src="./images/blog/flowers-mobile1@3x.jpg"
+          alt="flower"
+        />
+      </li>
+
+      <li class="blog__item">
+        <img
+          class="blog__img"
+          srcset="
+            ./images/blog/flowers-mobile2.jpg      136w,
+            ./images/blog/flowers-mobile2@2x.jpg   272w,
+            ./images/blog/flowers-mobile2@3x.jpg   408w,
+            ./images/blog/flowers-tablet2.jpg      344w,
+            ./images/blog/flowers-tablet2@2x.jpg   688w,
+            ./images/blog/flowers-tablet2@3x.jpg  1032w,
+            ./images/blog/flowers-desktop2.jpg     390w,
+            ./images/blog/flowers-desktop2@2x.jpg  780w,
+            ./images/blog/flowers-desktop2@3x.jpg 1170w
+          "
+          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px"
+          src="./images/blog/flowers-mobile2@3x.jpg"
+          alt="flower2"
+        />
+      </li>
+
+      <li class="blog__item">
+        <img
+          class="blog__img"
+          srcset="
+            ./images/blog/flowers-mobile3.jpg      136w,
+            ./images/blog/flowers-mobile3@2x.jpg   272w,
+            ./images/blog/flowers-mobile3@3x.jpg   408w,
+            ./images/blog/flowers-tablet3.jpg      344w,
+            ./images/blog/flowers-tablet3@2x.jpg   688w,
+            ./images/blog/flowers-tablet3@3x.jpg  1032w,
+            ./images/blog/flowers-desktop3.jpg     390w,
+            ./images/blog/flowers-desktop3@2x.jpg  780w,
+            ./images/blog/flowers-desktop3@3x.jpg 1170w
+          "
+          sizes="(min-width: 1280px) 600px, (min-width: 768px) 344px, (min-width: 480px) 136px"
+          src="./images/blog/flowers-mobile3@3x.jpg"
+          alt="flower3"
+        />
+      </li>
+    </ul>
+    <ul class="blog__arrow">
+      <li class="blog-btn-arrow">
+        <button class="blog__button--arrow" type="button">
+          <svg class="blog-button__icon--main" width="50" height="50">
+            <use href="./images/blog/icons.svg#icon-down-arrowL"></use>
+          </svg>
+        </button>
+      </li>
+      <li class="blog-btn-arrow">
+        <button class="blog__button--arrow" type="button">
+          <svg class="blog-button__icon--secondary" width="50" height="50">
+            <use href="./images/blog/icons.svg#icon-down-arrowR"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+    <h3 class="blog__newsletter">Follow to our newsletter</h3>
+    <button data-modal-newsletter-open type="button" class="button button--sm blog__button">
+      Newsletter
+    </button>
+  </div>
+</section>

@@ -1,20 +1,3 @@
-.newsletter-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  transition: $shiftModal;
-}
-
-.newsletter-is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-}
-
 .modal-newsletter {
   position: absolute;
   top: 50%;
@@ -125,6 +108,7 @@
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     row-gap: 8px;
@@ -154,9 +138,24 @@
       color: currentColor;
     }
 
-    &:hover,
-    &:focus-within {
-      border: 1px solid $hoverState;
+    &:hover {
+      border-color: $hoverState;
+    }
+
+    &:not(:placeholder-shown):required:valid {
+      border-color: $correctState;
+
+      ~ .input__state--correct {
+        display: block;
+      }
+    }
+
+    &:not(:placeholder-shown):required:invalid {
+      border-color: $errorState;
+
+      ~ .input__state--error {
+        display: block;
+      }
     }
 
     @include mq(tablet) {
