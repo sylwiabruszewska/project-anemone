@@ -2,6 +2,12 @@
   text-decoration: none;
 }
 
+.link:hover,
+.link:focus {
+  color: $colorPinkDark;
+  fill: $colorPinkLight;
+}
+
 .footer {
   background-color: $colorBlack;
   &__wrapper {
