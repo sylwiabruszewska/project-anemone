@@ -125,3 +125,11 @@
 .menu-toggle__close {
   fill: #fff;
 }
+
+@include mq(tablet) {
+  .header__menu-toggle {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
