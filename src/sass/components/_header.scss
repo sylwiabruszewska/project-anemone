@@ -109,6 +109,14 @@ ul {
   }
 }
 
+@include mq(tablet) {
+  .header__menu-toggle {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }    
+}
+
 .nav-container {
   width: 768px;
   margin-left: 80px;
