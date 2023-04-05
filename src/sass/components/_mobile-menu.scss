@@ -1,19 +1,27 @@
 .header__menu-toggle {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
-
   &:hover {
     fill: $colorPink;
   }
 }
+
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -28,6 +36,12 @@
   border: none;
   border-radius: 50%;
   outline: none;
+}
+
+@media (max-width: 480px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-container {
@@ -60,9 +74,6 @@
   margin: 0;
   list-style: none;
   margin-bottom: 200px;
-  background-color: $colorPink;
-  width: 100vw;
-  height: 100vh;
 }
 
 .mobile-menu .mobile_link {
@@ -74,10 +85,10 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
-  background-color: $colorPink;
-  letter-spacing: 0.02em;
-  color: #ffffff;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: #fff;
+
   &:hover {
     color: black;
   }
@@ -94,16 +105,13 @@
   }
 }
 
-.mobile-contacts {
-  line-height: 3;
-}
-
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (min-width: 480px) and (max-width: 768px) {
-    width: 18px;
-    height: 16px;
+  @media all and (min-width: 480px) and (max-width: 767px) {
+    width: 25px;
+    height: 20px;
+    position: fixed;
   }
   @media all and (min-width: 768px) and (max-width: 2000px) {
     display: none;
@@ -112,4 +120,8 @@
   &:hover {
     fill: $colorPink;
   }
+}
+
+.menu-toggle__close {
+  fill: #fff;
 }
