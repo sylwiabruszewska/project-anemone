@@ -1,116 +1,82 @@
+// MAIN NAVIGATION
 .page-header {
-  height: 80px;
-  justify-content: space-evenly;
+  background-color: transparent;
+  padding-top: 16px;
+  padding-top: 16px;
 
-  background: #ffffff;
-  display: flex;
-  margin: auto;
-  padding: 0px 15px;
-  text-decoration: none;
-}
-
-.header__logo {
-  height: 42.8px;
-  width: 40px;
-  margin-top: 17px;
-
-  @media all and (min-width: 480px) and (max-width: 768px) {
-    min-width: 20px;
+  @include mq(tablet) {
+    padding-top: 24px;
+    padding-top: 24px;
   }
-  &:hover {
-    fill: $colorPink;
-    cursor: pointer;
+
+  @include mq(desktop) {
+    padding-top: 28px;
+    padding-top: 28px;
   }
 }
 
-.navbar a {
-  text-decoration: none;
-}
-.navbar .navigation a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-
-  color: black;
-}
-
-.header__nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: black;
+.page-header__container {
   display: flex;
-  margin-top: 32px;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav__link {
-  color: #000000;
+.nav {
+  display: none;
 
-  @media all and (max-width: 480px) {
+  @include mq(tablet) {
+    display: flex;
+  }
+
+  &__item:not(:last-child) {
+    @include mq(tablet) {
+      margin-right: 24px;
+    }
+    @include mq(desktop) {
+      margin-right: 48px;
+    }
+  }
+}
+
+// CONTACT LIST
+.icon-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu-icon {
+  @include mq(tablet) {
     display: none;
+    overflow: hidden;
   }
+}
+
+// LINK STYLES
+.nav__link {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: $colorBlack;
+  transition: color $shift;
 
   &:hover {
     color: $colorPink;
     cursor: pointer;
   }
 }
-.nav-item {
-  color: black;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 
-  @media all and (max-width: 767px) {
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    display: none;
-  }
-}
-
-ul {
-  list-style-type: none;
-}
-
-.header__call {
-  height: 22px;
-  width: 35px;
-  margin-top: 35px;
-
-  @media all and (min-width: 480px) and (max-width: 768px) {
-    min-width: 20px;
-  }
-
+// ICONS STYLES
+.header__logo,
+.header__icon,
+.menu-icon {
+  fill: $colorBlack;
+  transition: fill $shift;
+  transition: transform $shift;
   &:hover {
     fill: $colorPink;
-    cursor: pointer;
+    // cursor: pointer;
+    transform: scale(1.2);
   }
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-@media (min-width: 480px) {
-  .menu {
-    display: none;
-  }
-}
-
-.nav-container {
-  width: 768px;
-  margin-left: 80px;
-  margin-right: 80px;
 }
