@@ -23,8 +23,14 @@
   justify-content: center;
 }
 .blog__img {
-  max-width: 100%;
+  max-width: 216px;
+  min-width: 136px;
   height: auto;
+
+  @include mq(mobile) {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 .blog__newsletter {
