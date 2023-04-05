@@ -12,7 +12,7 @@
 .header__logo {
   height: 42.8px;
   width: 40px;
-  margin-top: 12px;
+  margin-top: 17px;
 
   @media all and (min-width: 480px) and (max-width: 768px) {
     min-width: 20px;
@@ -44,7 +44,6 @@
   display: flex;
   margin-top: 32px;
   justify-content: space-evenly;
-  width: 768px;
 }
 
 .nav__link {
@@ -68,7 +67,7 @@
   line-height: 16px;
   letter-spacing: 0.02em;
 
-  @media all and (max-width: 768px) {
+  @media all and (max-width: 767px) {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -85,7 +84,7 @@ ul {
 .header__call {
   height: 22px;
   width: 35px;
-  margin-top: 30px;
+  margin-top: 35px;
 
   @media all and (min-width: 480px) and (max-width: 768px) {
     min-width: 20px;
@@ -108,4 +107,10 @@ ul {
   .menu {
     display: none;
   }
+}
+
+.nav-container {
+  width: 768px;
+  margin-left: 80px;
+  margin-right: 80px;
 }

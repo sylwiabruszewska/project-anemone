@@ -4,7 +4,6 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
-
   &:hover {
     fill: $colorPink;
   }
@@ -109,7 +108,7 @@
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (min-width: 480px) and (max-width: 768px) {
+  @media all and (min-width: 480px) and (max-width: 767px) {
     width: 25px;
     height: 20px;
     position: fixed;
@@ -121,4 +120,8 @@
   &:hover {
     fill: $colorPink;
   }
+}
+
+.menu-toggle__close {
+  fill: #fff;
 }
