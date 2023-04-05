@@ -5,12 +5,12 @@
         <use href="./images/icons/icons.svg#icon-close-button"></use>
       </svg>
     </button>
-    <h3 class="form__title">Contact Us</h3>
+    <h3 class="form__title">Contact us</h3>
     <span class="form__text"
       >If you have any additional questions or you want to clarify something before you make an
       order please fill in your contact details. We will call you back.</span
     >
-    <form name="modal-form">
+    <form name="modal-form" method="post" onsubmit="return false">
       <label class="form__label">
         <span class="form__span">Name</span>
         <input
@@ -56,7 +56,9 @@
           </svg>
         </div>
       </label>
-      <button modal-thanks-open type="button" class="form__submit-btn">Send</button>
+      <button modal-thanks-open type="submit" class="button modal__button form__button">
+        Send
+      </button>
       <!-- jak znajdzie sie js do wyszarzania buttonow to mozna dac disabled tak jak thx-modal-open na tego buttona style zrobilem w cssie -->
     </form>
   </div>
