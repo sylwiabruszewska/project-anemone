@@ -16,7 +16,6 @@
 .blog__flower {
     display: flex;
     gap: 16px;
-    margin-left: 16px;
     justify-content: center;
 }
 
@@ -30,9 +29,7 @@
 }
 
 .blog__newsletter {
-    margin-bottom: 24px;
     margin: 0 auto;
-    // font-family: $fontFamily;
     text-align: center;
     width: 224px;
     height: 22px;
@@ -40,6 +37,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 0.818;
+    margin-bottom: 24px;
 
     @include mq(tablet) {
         margin-bottom: 32px;
