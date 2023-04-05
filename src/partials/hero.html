@@ -3,24 +3,27 @@
     <div class="hero">
       <div class="hero__img-frame">
         <div class="hero__img-box">
-          <img
-            class="hero__img"
-            src="./images/hero/hero.jpg"
-            srcset="
-              ./images/hero/hero-390@3x.jpg 1170w,
-              ./images/hero/hero-390.jpg     390w,
-              ./images/hero/hero-390@2x.jpg  780w,
-              ./images/hero/hero-145@3x.jpg  435w,
-              ./images/hero/hero-145.jpg     145w,
-              ./images/hero/hero-145@2x.jpg  290w
-            "
-            sizes="(min-width: 1170px)
-                  1170px, (min-width: 780px)
-                  780px, (min-width: 435px)
-                  435px, (min-width: 390px) 390px, (min-width: 290px) 290px,
-                  (min-width: 145px) 145px, 100vw"
-            alt="Beautiful Echinacea flower picture"
-          />
+          <picture class="hero__img">
+            <source
+              srcset="
+                ./images/hero/hero-145.jpg    145w,
+                ./images/hero/hero-145@2x.jpg 290w,
+                ./images/hero/hero-145@3x.jpg 435w
+              "
+              media="(max-width: 767px)"
+              sizes="145px"
+            />
+            <source
+              srcset="
+                ./images/hero/hero-390.jpg     390w,
+                ./images/hero/hero-390@2x.jpg  780w,
+                ./images/hero/hero-390@3x.jpg 1170w
+              "
+              media="(min-width: 768px)"
+              sizes="390px"
+            />
+            <img src="./images/hero/hero-145.jpg" alt="Beautiful Echinacea Flower" />
+          </picture>
           <!-- w folderze images sa obrazki hero_full do uzycia jesli bedziemy robic animke -->
         </div>
         <div class="hero__headerbox">
@@ -41,7 +44,7 @@
                 media="(min-width: 1280px)"
                 sizes="166px"
               />
-              <img src="./images/hero/btn-mob.svg" alt="Flowers" />
+              <img src="./images/hero/btn-mob.svg" alt="Shop now button" />
             </picture>
           </button>
         </div>

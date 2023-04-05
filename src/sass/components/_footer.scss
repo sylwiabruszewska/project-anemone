@@ -1,5 +1,8 @@
 .link {
   text-decoration: none;
+    &:hover {
+        color: $colorPink;
+      }
 }
 
 .link:hover,
@@ -87,9 +90,15 @@
   &__icon {
     &-facebook {
       fill: $colorWhite;
+        &:hover {
+            fill: $colorPink;
+          }
     }
     &-instagram {
       fill: $colorWhite;
+        &:hover {
+            fill: $colorPink;
+          }
     }
   }
 }
