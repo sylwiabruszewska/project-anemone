@@ -1,14 +1,9 @@
 .link {
   text-decoration: none;
-    &:hover {
-        color: $colorPink;
-      }
-}
-
-.link:hover,
-.link:focus {
-  color: $colorPinkDark;
-  fill: $colorPinkDark;
+  &:hover {
+    color: $colorPink;
+    fill: $colorPink;
+  }
 }
 
 .footer {
@@ -60,6 +55,7 @@
 .contacts {
   width: 100%;
   padding-top: 32px;
+  font-style: normal;
 
   &__address {
     font-family: $fontSecondary;
@@ -72,6 +68,10 @@
       display: block;
       color: $colorWhite;
       margin-bottom: 12px;
+      font-style: normal;
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
@@ -90,15 +90,15 @@
   &__icon {
     &-facebook {
       fill: $colorWhite;
-        &:hover {
-            fill: $colorPink;
-          }
+      &:hover {
+        fill: $colorPink;
+      }
     }
     &-instagram {
       fill: $colorWhite;
-        &:hover {
-            fill: $colorPink;
-          }
+      &:hover {
+        fill: $colorPink;
+      }
     }
   }
 }
