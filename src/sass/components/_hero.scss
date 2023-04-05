@@ -61,8 +61,8 @@
     // transition: filter $shift;
     transition: transform $shift;
     &:hover {
-          animation: shopnow 2s infinite 0.1s alternate linear;
-    //   filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%);
+      animation: shopnow 1s infinite 0.1s alternate linear;
+      //   filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%);
       transform: scale(1.2);
     }
   }
@@ -78,7 +78,7 @@
   // }
 
   to {
-    filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%)
+    filter: invert(75%) sepia(42%) saturate(6520%) hue-rotate(325deg) brightness(95%) contrast(90%);
     // filter: invert(44%) sepia(64%) saturate(703%) hue-rotate(324deg) brightness(93%) contrast(91%);
   }
 }
