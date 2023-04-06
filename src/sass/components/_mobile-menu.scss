@@ -1,7 +1,4 @@
 .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  background-color: transparent;
   border: none;
   cursor: pointer;
   transition: fill $shift;
@@ -17,9 +14,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  padding-top: 32px;
+  // padding-top: 32px;
   background-color: $colorPink;
   z-index: 999;
 
