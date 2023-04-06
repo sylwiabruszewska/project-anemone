@@ -4,8 +4,13 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
   &:hover {
     fill: $colorPink;
+  }
+
+  @include mq(tablet) {
+    display: none;
   }
 }
 
@@ -14,10 +19,8 @@
   padding: 0;
   margin: 0;
   list-style: none;
-}
 
-@media (min-width: 480px) {
-  .menu {
+  @include mq(mobile) {
     display: none;
   }
 }
@@ -36,10 +39,8 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
 
-@media (max-width: 480px) {
-  .menu-toggle {
+  @include mq(mobile, max) {
     display: none;
   }
 }
@@ -98,8 +99,8 @@
   width: 19px;
   height: 19px;
   margin-top: 11px;
-
   cursor: pointer;
+
   &:hover {
     fill: #2196f3;
   }
@@ -108,12 +109,13 @@
 .menu-toggle__icon {
   position: absolute;
 
-  @media all and (min-width: 480px) and (max-width: 767px) {
+  @include mq(tablet, max) {
     width: 25px;
     height: 20px;
     position: fixed;
   }
-  @media all and (min-width: 768px) and (max-width: 2000px) {
+
+  @include mq(tablet) {
     display: none;
   }
 
@@ -124,12 +126,4 @@
 
 .menu-toggle__close {
   fill: #fff;
-}
-
-@include mq(tablet) {
-  .header__menu-toggle {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-  }
 }
