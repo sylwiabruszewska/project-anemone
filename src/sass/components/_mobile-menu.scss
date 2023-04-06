@@ -35,17 +35,6 @@
   transform: translateX(0);
 }
 
-.menu-toggle {
-  // position: absolute;
-  // top: 16px;
-  // right: 16px;
-  color: $colorWhite;
-
-  @include mq(mobile, max) {
-    display: none;
-  }
-}
-
 .mobile-menu .mobile__link {
   display: block;
   text-align: center;
@@ -69,11 +58,11 @@
 }
 
 .menu-toggle-close {
-  fill: $colorWhite;
-  transition: transform $shift;
   position: absolute;
   top: 16px;
   right: 16px;
+  fill: $colorWhite;
+  transition: transform $shift;
 
   &:hover {
     transform: scale(1.2);
