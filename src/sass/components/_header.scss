@@ -1,4 +1,3 @@
-// MAIN NAVIGATION
 .page-header {
   background-color: transparent;
   padding-top: 16px;
@@ -15,6 +14,7 @@
   }
 }
 
+// MAIN NAVIGATION
 .page-header__container {
   display: flex;
   justify-content: space-between;
@@ -31,18 +31,21 @@
   &__item:not(:last-child) {
     @include mq(tablet) {
       margin-right: 24px;
+      // gap: 24px;
     }
     @include mq(desktop) {
       margin-right: 48px;
+      // gap: 48px;
     }
   }
 }
 
-// CONTACT LIST
+// ICONS BOX - TEL & MOBILE MENU
 .icon-box {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  gap: 14px;
 }
 
 .menu-icon {
@@ -76,7 +79,6 @@
   transition: transform $shift;
   &:hover {
     fill: $colorPink;
-    // cursor: pointer;
     transform: scale(1.2);
   }
 }
