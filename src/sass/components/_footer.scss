@@ -1,6 +1,7 @@
 .link {
   text-decoration: none;
   transition: color $shift;
+  font-style: normal;
 
   &:hover {
     color: $colorPink;
@@ -137,7 +138,7 @@
     &__address {
       font-size: 16px;
       font-weight: 500;
-      line-height: 0.82;
+      line-height: 1.18;
       text-align: left;
       color: $colorWhite;
       &-item {
@@ -196,5 +197,8 @@
   }
   .contacts {
     margin-right: 164px;
+    &__address {
+      line-height: 1.18;
+    }
   }
 }
