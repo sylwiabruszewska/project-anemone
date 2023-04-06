@@ -4,21 +4,23 @@ const swiper = new Swiper('.swiper', {
   // loop: true,
   speed: 500,
   centerInsufficientSlides: true,
-
   // loopedSlides: 1,
-
-  // autoHeight: true,
   slidesPerView: 2,
-  spaceBetween: 16,
-  // centerInsufficientSlides: true,
 
   breakpoints: {
-    // when window width is >= 480px
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+
     768: {
       slidesPerView: 2,
       spaceBetween: 31,
     },
-    // when window width is >= 640px
     1280: {
       slidesPerView: 3,
       spaceBetween: 32,

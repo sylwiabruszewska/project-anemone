@@ -2,6 +2,10 @@
   margin-bottom: 45px;
   --swiper-navigation-size: 100px;
   --swiper-navigation-color: black;
+
+  @include mq(mobile, max) {
+    max-width: 288px;
+  }
 }
 
 .swiper-button-prev,
