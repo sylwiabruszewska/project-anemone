@@ -1,46 +1,14 @@
-.header__menu-toggle {
+.menu-toggle {
   min-height: 40px;
   min-width: 40px;
   background-color: transparent;
   border: none;
   cursor: pointer;
-
+  transition: fill $shift;
   &:hover {
     fill: $colorPink;
   }
-
   @include mq(tablet) {
-    display: none;
-  }
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
-  @include mq(mobile) {
-    display: none;
-  }
-}
-
-.menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  margin: 0;
-  padding: 0;
-  background-color: $colorPink;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-
-  @include mq(mobile, max) {
     display: none;
   }
 }
@@ -55,75 +23,68 @@
   background-color: $colorPink;
   z-index: 999;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform $shift;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
 }
 
-.menu-container .menu-toggle {
+.menu-toggle {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: black;
+  color: $colorWhite;
+
+  @include mq(mobile, max) {
+    display: none;
+  }
 }
 
 .mobile-menu {
-  padding: 48px;
-  margin: 0;
-  list-style: none;
-  margin-bottom: 200px;
+  // padding: 48px;
+  // padding: 0;
+  // margin: 0;
+  // list-style: none;
+  // margin-bottom: 200px;
 }
 
-.mobile-menu .mobile_link {
+.mobile-menu .mobile__link {
   display: block;
-  padding-top: 32px;
-  text-decoration: none;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
   text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 1.2;
+  // text-align: center;
   letter-spacing: 0.02em;
-  color: #fff;
+  color: $colorWhite;
 
   &:hover {
-    color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+}
+
+.mobile__item {
+  &:not(:last-child) {
+    margin-bottom: 26px;
   }
 }
 
 .menu-toggle-close {
-  width: 19px;
-  height: 19px;
-  margin-top: 11px;
-  cursor: pointer;
+  fill: $colorWhite;
+  transition: transform $shift;
 
   &:hover {
-    fill: #2196f3;
-  }
-}
-
-.menu-toggle__icon {
-  position: absolute;
-
-  @include mq(tablet, max) {
-    width: 25px;
-    height: 20px;
-    position: fixed;
+    transform: scale(1.2);
   }
 
   @include mq(tablet) {
     display: none;
   }
-
-  &:hover {
-    fill: $colorPink;
-  }
-}
-
-.menu-toggle__close {
-  fill: #fff;
 }
