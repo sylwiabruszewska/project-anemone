@@ -2,21 +2,21 @@
   const refs = {
     // REFS
     // contact refs
-    openModalBtnContact: document.querySelector('[modal-contact-open]'),
-    open2ModalBtnContact: document.querySelector('[modal-contact-open2]'),
-    closeModalBtnContact: document.querySelector('[modal-contact-close]'),
-    modalContact: document.querySelector('[modal-contact]'),
+    openModalBtnContact: document.querySelector('[data-modal-contact-open]'),
+    open2ModalBtnContact: document.querySelector('[data-modal-contact-open2]'),
+    closeModalBtnContact: document.querySelector('[data-modal-contact-close]'),
+    modalContact: document.querySelector('[data-modal-contact]'),
 
     // newsletter refs
-    openModalBtnNewsletter: document.querySelector('[modal-newsletter-open]'),
-    closeModalBtnNewsletter: document.querySelector('[modal-newsletter-close]'),
-    modalNewsletter: document.querySelector('[modal-newsletter]'),
+    openModalBtnNewsletter: document.querySelector('[data-modal-newsletter-open]'),
+    closeModalBtnNewsletter: document.querySelector('[data-modal-newsletter-close]'),
+    modalNewsletter: document.querySelector('[data-modal-newsletter]'),
 
     // thank you refs
-    openModalBtnThanks: document.querySelector('[modal-thanks-open]'),
-    closeModalBtnThanks: document.querySelector('[modal-thanks-close]'),
-    continueModalBtnThanks: document.querySelector('[modal-thanks-continue]'),
-    modalThanks: document.querySelector('[modal-thanks]'),
+    openModalBtnThanks: document.querySelector('[data-modal-thanks-open]'),
+    closeModalBtnThanks: document.querySelector('[data-modal-thanks-close]'),
+    continueModalBtnThanks: document.querySelector('[data-modal-thanks-continue]'),
+    modalThanks: document.querySelector('[data-modal-thanks]'),
   };
 
   // ADD EVENT LISTENER
